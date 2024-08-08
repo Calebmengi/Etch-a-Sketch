@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: row-reverse;
+}
+
+.canvas {
+    display: grid;
+    gap: 2px;
+    width: 400px;  /* Same as GRIDSIDE */
+    height: 400px; /* Same as GRIDSIDE */
+    border: 3px solid #000;
+}
+
+.canvas .grid {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#resize input[type="range"] {
+    width: 200px;
+}
+
+.grid{
+    cursor: crosshair;
+}
+
+button, label{ 
+    font-family: monaco, Consolas, Lucida Console, monospace; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#rainbow-pen{
+    background: linear-gradient(130deg, red, blue, rgb(0, 255, 0));
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+#clear-canvas{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#eraser-btn{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(231, 90, 114);
+    color: #fff;
+    border: rgb(231, 90, 114);
+    border-radius: 5px 2px;
+    box-shadow: 0px 5px rgb(181, 66, 85);
+}
+
+#resize-btn{
+    text-align: center;
+    border: 1px solid black;
+}
+
+label{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 120px;
+}

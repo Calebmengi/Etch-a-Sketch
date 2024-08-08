@@ -4,7 +4,7 @@ const changeColor = document.getElementById("change-color");
 const clearCanvas = document.getElementById("clear-canvas");
 const rainbowPen = document.getElementById("rainbow-pen");
 
-const GRIDSIDE = 400;
+const GRIDSIDE = 600;
 let rows = 16;
 let cols = 16;
 let currentColor = "#000000";
